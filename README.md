@@ -6,4 +6,6 @@
 
 *Checkerboard Pattern Size:* 34 mm
 
-<!-- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true) -->
+![Original Image](https://github.com/nykabhishek/camera-calibration/blob/main/outputs/original.png)
+![Chessboard Corners](https://github.com/nykabhishek/camera-calibration/blob/main/outputs/chess.png)
+![Undistorted image](https://github.com/nykabhishek/camera-calibration/blob/main/outputs/undistorted_calibresult.png)
