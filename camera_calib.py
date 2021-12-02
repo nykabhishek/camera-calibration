@@ -5,7 +5,8 @@ import cv2
 import glob
 
 ''' Dimensions of the chessboard '''
-chessboard_pattern = (6,8)
+chessboard_pattern = (8,10)
+chessboard_internal_pattern = (6,8)
 chessboard_pattern_size_mm = 34
 
 ''' Path to the image to undistort '''
@@ -13,8 +14,8 @@ distorted_image_1 = './images/img_014.jpg'
 
 ''' Defining the world coordinates for 3D points ''' 
 ''' Object points are (0,0,0), (1,0,0), (2,0,0), ..., (6,8,0) '''
-objp = np.zeros((chessboard_pattern[0] * chessboard_pattern[1], 3), np.float32)
-objp[:,:2] = np.mgrid[0:chessboard_pattern[0], 0:chessboard_pattern[1]].T.reshape(-1, 2)
+objp = np.zeros((chessboard_internal_pattern[0] * chessboard_internal_pattern[1], 3), np.float32)
+objp[:,:2] = np.mgrid[0:chessboard_internal_pattern[0], 0:chessboard_internal_pattern[1]].T.reshape(-1, 2)
 
 ''' Scaling the object points by the pattern size '''
 # objp = objp * chessboard_pattern_size_mm
@@ -34,7 +35,7 @@ for image in image_list:
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
     # Find the chessboard corners
-    ret, corners = cv2.findChessboardCorners(gray, chessboard_pattern, cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_FAST_CHECK + cv2.CALIB_CB_NORMALIZE_IMAGE)
+    ret, corners = cv2.findChessboardCorners(gray, chessboard_internal_pattern, cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_FAST_CHECK + cv2.CALIB_CB_NORMALIZE_IMAGE)
 
     # If corners are found, add object points, image points (after refining them)
     if ret == True:
@@ -45,7 +46,7 @@ for image in image_list:
         imgpoints.append(corners2)
 
         # Draw and display the chessboard corners
-        cv2.drawChessboardCorners(img, chessboard_pattern, corners2, ret)
+        cv2.drawChessboardCorners(img, chessboard_internal_pattern, corners2, ret)
         cv2.imshow('img', img)
 
         if image == distorted_image_1:
