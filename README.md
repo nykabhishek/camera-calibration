@@ -1,5 +1,7 @@
 # Camera Calibration using OpenCV
 
+Project as part of the coursework CSCE 643 - Robotics and Spatial Intelligence
+
 *Camera used for testing:* Aukey PC-W3 (1080x1980)
 
 *Checkerboard Pattern :* 10x8
