@@ -4,11 +4,9 @@ Project as part of the coursework CSCE 643 - Robotics and Spatial Intelligence
 
 ## Specifications:
 
-*Camera used for testing:* Aukey PC-W3 (1080x1980)
-
-*Checkerboard Pattern :* 10x8
-
-*Checkerboard Pattern Size:* 34 mm
+Camera used for testing: `Aukey PC-W3 (1080x1980)`
+Checkerboard Pattern : `10x8`
+Checkerboard Pattern Size: `34 mm`
 
 ### Original Image
 
