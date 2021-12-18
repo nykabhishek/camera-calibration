@@ -10,11 +10,14 @@ Project as part of the coursework CSCE 643 - Robotics and Spatial Intelligence
 
 *Checkerboard Pattern Size:* 34 mm
 
-Original Image
+### Original Image
+
 <img src="https://github.com/nykabhishek/camera-calibration/blob/main/outputs/original.png" width="300" title="Original Image" >
 
-Detected Chessboard Pattern
+### Detected Chessboard Pattern
+
 <img src="https://github.com/nykabhishek/camera-calibration/blob/main/outputs/chess.png" width="300" >
 
-Undistorted Image
+### Undistorted Image
+
 <img src="https://github.com/nykabhishek/camera-calibration/blob/main/outputs/undistorted_calibresult.png" width="300" >
