@@ -1,6 +1,6 @@
 # Camera Calibration using OpenCV
 
-Project as part of the coursework CSCE 643 - Robotics and Spatial Intelligence
+Projecwork as part of the course CSCE 643 - Robotics and Spatial Intelligence
 
 ## Specifications:
 
