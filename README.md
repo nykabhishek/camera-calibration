@@ -3,7 +3,8 @@
 Projecwork as part of the course CSCE 643 - Robotics and Spatial Intelligence.
 
 ## Usage
-  $ python camera_calib.py
+
+    $ python camera_calib.py
 
 ## Specifications:
 
