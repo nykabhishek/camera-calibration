@@ -1,6 +1,9 @@
 # Camera Calibration using OpenCV
 
-Projecwork as part of the course CSCE 643 - Robotics and Spatial Intelligence
+Projecwork as part of the course CSCE 643 - Robotics and Spatial Intelligence.
+
+## Usage
+  $ python camera_calib.py
 
 ## Specifications:
 
