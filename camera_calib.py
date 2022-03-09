@@ -12,8 +12,7 @@ chessboard_pattern_size_mm = 34
 ''' Path to the image to undistort '''
 distorted_image_1 = './images/img_014.jpg'
 
-''' Defining the world coordinates for 3D points ''' 
-''' Object points are (0,0,0), (1,0,0), (2,0,0), ..., (6,8,0) '''
+''' Defining the world coordinates for 3D points. Object points are (0,0,0), (1,0,0), (2,0,0), ..., (6,8,0) '''
 objp = np.zeros((chessboard_internal_pattern[0] * chessboard_internal_pattern[1], 3), np.float32)
 objp[:,:2] = np.mgrid[0:chessboard_internal_pattern[0], 0:chessboard_internal_pattern[1]].T.reshape(-1, 2)
 
